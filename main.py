@@ -56,3 +56,11 @@ for word in words:
         word_count[word] = 1
 
 print(word_count)
+
+
+
+numbers = [1, 2, 3, 4, 5]
+
+squares = [n * n for n in numbers]
+
+print(squares)
