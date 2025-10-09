@@ -64,3 +64,12 @@ numbers = [1, 2, 3, 4, 5]
 squares = [n * n for n in numbers]
 
 print(squares)
+
+
+
+
+words = ["apple", "banana", "pear", "grape"]
+
+sorted_words = sorted(words, key=len)
+
+print(sorted_words)
