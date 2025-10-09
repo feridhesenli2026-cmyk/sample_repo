@@ -25,9 +25,34 @@ end = 50
 print(f"Prime numbers between {start} and {end}:")
 
 for num in range(start, end + 1):
-    if num > 1:  # Sadə ədədlər 1-dən böyük olur
+    if num > 1:  
         for i in range(2, int(num ** 0.5) + 1):
             if num % i == 0:
                 break
         else:
             print(num)
+
+
+
+
+
+
+text = "Hello world! Hello everyone. Welcome to the world of Python."
+
+text = text.lower()
+
+text = text.replace("!", "")
+text = text.replace(".", "")
+text = text.replace(",", "")
+
+words = text.split()
+
+word_count = {}
+
+for word in words:
+    if word in word_count:
+        word_count[word] = word_count[word] + 1
+    else:
+        word_count[word] = 1
+
+print(word_count)
